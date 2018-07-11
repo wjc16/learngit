@@ -16,4 +16,10 @@
 删除分支 git branch -d <name>
 分支合并冲突时需要手动解决冲突再提交，此时合并完成
 查看分支合并图 git log --graph (--pretty=oneline 简要信息)
-test merge
+不以ff方式合并分支 git merge --no-ff -m "merge with no-ff" dev (会创建一个新的备注为""的commit)
+中断机制 git stash 保存工作区状态，再查看是工作区为空
+查看中断点 git stash list
+恢复 git stash apply（不会删除stash） 删除 git stash drop
+恢复并删除断点 git stash pop
+多个断点： ~ stash@{*}
+删除一个未合并的分支 git branch -D <name>（大写D）
