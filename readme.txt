@@ -10,5 +10,10 @@
 删除本地 rm 删除版本库中的文件 git rm
 本地库推到远程 git push eg:git push -u origin master (-u 推送并关联)
 克隆 git clone +地址	（git支持多种协议）
-创建分支 git checkout -b dev (-b表示创建并切换) 切换分支 git checkout
+创建分支 git checkout -b 分支名 (-b表示创建并切换) 创建分支 git branch <name>切换分支 git checkout <name>
 查看当前分支 git branch
+分支合并 git merge <name>
+删除分支 git branch -d <name>
+分支合并冲突时需要手动解决冲突再提交，此时合并完成
+查看分支合并图 git log --graph (--pretty=oneline 简要信息)
+test merge
