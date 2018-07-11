@@ -23,3 +23,10 @@
 恢复并删除断点 git stash pop
 多个断点： ~ stash@{*}
 删除一个未合并的分支 git branch -D <name>（大写D）
+查看远程库信息 git remote -v
+试图合并远程分支与本地分支 git pull
+如果git pull提示no tracking information，说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>
+打标签 git tag<name> （默认标签是打在最后一个commit上的，git tag <name> <commit_id>）
+查看标签 git tag(某条分支上的标签，以字典顺序排列)
+查看标签信息 git show <tagname>
+建立带说明的标签 git tag -a <name> -m "*" <commit_id> (用-a指定标签名，-m指定说明文字)
