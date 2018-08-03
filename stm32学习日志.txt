@@ -64,3 +64,19 @@ void EXTI_Configuration()
 	#define KEY1_INT_EXTI_IRQ EXTI0_IRQn
 	#define KEY1_IRQHandler EXTI0_IRQHandler 
 	*irqn的通道需要与irqhandler的处理函数相同
+	
+SYSTICK
+	初始化函数：
+	void Systick_Ini()
+	{
+		SysTick_Config(SystemCoreClock/100000);
+	}	
+	SystemCoreClock是库函数，用于配置tick，参数为tick的计数值
+	常用：SystemCoreClock/1000（1ms），SystemCoreClock/100000（10us），SystemCoreClock/1000000（1us）
+	服务函数：
+	void SysTick_Handler(void)
+	stm32xxxxx_it.h库函数
+	基本用法:
+	声明一个全局变量用于记录滴答的数量
+	
+	
