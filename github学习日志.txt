@@ -30,3 +30,5 @@
 查看标签 git tag(某条分支上的标签，以字典顺序排列)
 查看标签信息 git show <tagname>
 建立带说明的标签 git tag -a <name> -m "*" <commit_id> (用-a指定标签名，-m指定说明文字)
+
+master
